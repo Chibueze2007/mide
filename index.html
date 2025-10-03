@@ -12,6 +12,9 @@
     }
     *{box-sizing:border-box; margin:0; padding:0;}
     body{
+        display:flex;
+    justify-content: center;  
+    align-items: center;
       font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
       background: linear-gradient(135deg,var(--bg1),var(--bg2));
       color:#fff;
@@ -19,9 +22,11 @@
     }
 
     .card {
-      width: 350px;
+      width: min(920px,94vw);
       max-width: 90%;
-      padding: 20px;
+      padding: 36px;
+      justify-content: center;
+      text-align: center;
       border-radius: 20px;
       background: rgba(255, 255, 255, 0.15);
       -webkit-backdrop-filter: blur(6px); /* for iOS Safari */
